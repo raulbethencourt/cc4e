@@ -13,9 +13,10 @@
     - [Chapter 8](#chapter-8)
     - [Chapter 9](#chapter-9)
     - [Chapter 10](#chapter-10)
+    - [Chapter 11](#chapter-11)
+    - [Chapter 12](#chapter-12)
+    - [Chapter 13](#chapter-13)
 <!--toc:end-->
-
-______________________________________________________________________
 
 ## Chapters
 
