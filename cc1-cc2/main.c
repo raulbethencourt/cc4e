@@ -1,5 +1,7 @@
 // Copyright (c) 2023 Raul Behtencourt. All Rights Reserved.
+#include <ctype.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -54,20 +56,24 @@ int main()
     // }
 
     // NOTE: Exercise RS-7
-    // int first = 1;
-    // int val, maxval, minval;
-    //
-    // // NOTE: EOF equals to <ctrl-d>
-    // while ((val = getchar()) != EOF) {
-    //     if (first || val > maxval)
-    //         maxval = val;
-    //     if (first || val < minval)
-    //         minval = val;
-    //     first = 0;
-    // }
+    int first = 1;
+    int val, maxval, minval, dval;
 
-    // printf("Maximum %d\n", maxval);
-    // printf("Minimum %d\n", minval);
+    for (int i = 0; (val = getchar()) != 'd'; i++) {
+        if ('\n' == val)
+            continue;
+        if (isspace(val))
+            continue;
+
+        if (first || val > maxval)
+            maxval = val;
+        if (first || val < minval)
+            minval = val;
+
+        first = 0;
+    }
+    printf("Maximum %c\n", maxval);
+    printf("Minimum %c\n", minval);
 
     // NOTE: Exercise RS-8
     // int guess;
