@@ -3,8 +3,9 @@
 int get_length(char s[])
 {
     int count;
-    for (count = 0; s[count] != '\0'; ++count)
-        ;
+    while (s[count] != '\0') {
+        ++count;
+    }
     return count;
 }
 
@@ -51,7 +52,7 @@ int htoi(char s[])
             value = 15;
             break;
         default:
-            // transforming char int to int
+            // transforming char in to int
             value = s[j] - '0';
             break;
         }
